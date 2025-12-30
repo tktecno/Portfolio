@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 export const Img = () => {
-    const [url , setUrl] = useState("./character.png")
+    const [url , setUrl] = useState("./character.webp")
     const [idx, setIdx] = useState(1);
     const pic = [
-        "./character.png",
-        "./tps2.png"
+        "./character.webp",
+        "./tps2.webp"
     ]
     const handleClick = ()=>{
         setIdx(prev=> ++prev%2);
