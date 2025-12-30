@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 export const Intro = () => {
-  const messages = [
-    "I'm Tapash Roy",
-    "Welcome",
-    "Namaste",
-    "No-Mo-Shkar",
-    "Hello !"
-  ];
+  const messages = useMemo(
+    () => [
+      "I'm Tapash Roy",
+      "Welcome",
+      "Namaste",
+      "No-Mo-Shkar",
+      "Hello !"
+    ],
+    []
+  );
 
   const [intro, setIntro] = useState(true);
   const [text, setText] = useState(messages[0]);
@@ -21,11 +24,12 @@ export const Intro = () => {
 
       if (i === messages.length) {
         clearInterval(interval);
-
         setTimeout(() => setIntro(false), 400);
       }
-    },300, 200); 
-  }, []);
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, [messages]);
 
   return (
     <>
