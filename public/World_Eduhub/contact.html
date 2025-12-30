@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--******** Nav Bar Start Here ********* -->
+    <header class="section-navbar">
+
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="World EduHUB" width="80%" />
+                </a>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- *********** Nav Bar End Her *********** -->
+
+    <!--************ Contact us -->
+
+    <div class="contact-us">
+        <div class="container">
+            <h2 class="section-common--heading">
+                Contact Us
+            </h2>
+            <p class="section-common--subheading">Get in touch with us. We are always here to help you.</p>
+        </div>
+    </div>
+
+    <section class="section-contact-us">
+
+        <div class="container grid grid-two--cols">
+            <div class="contact-content">
+                <form action="https://formspree.io/f/mvgwlrkq"
+                method="POST">
+                    <div class="grid grid-two--cols mb-3">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" required autocomplete="off"
+                                placeholder="Name" />
+                        </div>
+
+                        <div>
+                            <label for="email">Enter your email</label>
+                            <input type="email" name="email" id="email" required autocomplete="off" placeholder="name@example.com" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="your main title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="Message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6613.593198096164!2d89.37298860491717!3d26.400503755462083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1760687447794!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!--************ contact us End-->
+
+
+    <!--*********** Footer Section Start-->
+    <section class="section-footer">
+        <div class="container grid grid-four--cols">
+            <div class="footer-div">
+                <h1 class="footer-heading">
+                    Wold EduHUB</h1>
+                <p>Let's revolutionize the way you study with Wold EduHUB</p>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-div">
+                <h1>Courses</h1>
+                <p>JavaScript</p>
+                <p>Java</p>
+                <p>Python</p>
+                <p>SQL</p>
+            </div>
+        </div>
+    </section>
+    <!--*********** Footer Section End-->
+
+</body>
+
+</html>
