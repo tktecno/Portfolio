@@ -235,83 +235,88 @@ export default function Portfolio() {
 
         {/* Contact */}
         <Reveal>
-          <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
-            <h3 className="text-3xl font-bold mb-6">Get In Touch</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">Send me a message and it will come straight to my email.</p>
+        <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
+  <h3 className="text-3xl font-bold mb-6">Get In Touch</h3>
+  <p className="text-gray-700 dark:text-gray-300 mb-6">
+    Send me a message and it will come straight to my email.
+  </p>
 
-            {/* Hidden Netlify form registration */}
-            <form name="contact" data-netlify="true" hidden>
-              <input type="text" name="name" />
-              <input type="email" name="email" />
-              <textarea name="message" />
-            </form>
+  {/* Hidden Netlify form registration (ONLY ONE) */}
+  <form name="contact" data-netlify="true" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message" />
+  </form>
 
-            {/* Netlify form */}
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              className="max-w-2xl mx-auto space-y-4 p-6 border rounded-2xl shadow-sm"
-            >
-              <input type="hidden" name="form-name" value="contact" />
+  {/* Netlify form */}
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    className="max-w-2xl mx-auto space-y-4 p-6 border rounded-2xl shadow-sm"
+  >
+    <input type="hidden" name="form-name" value="contact" />
 
-              {/* spam trap */}
-              <p hidden>
-                <label>
-                  Don’t fill this out:
-                  <input name="bot-field" />
-                </label>
-              </p>
+    {/* spam trap */}
+    <p hidden>
+      <label>
+        Don’t fill this out:
+        <input name="bot-field" />
+      </label>
+    </p>
 
-              <div>
-                <label className="block text-sm font-medium mb-1">Your Name</label>
-                <input
-                  name="name"
-                  required
-                  className="w-full border rounded-xl p-3 outline-none focus:ring"
-                  placeholder="Enter your name"
-                />
-              </div>
+    <div>
+      <label className="block text-sm font-medium mb-1">Your Name</label>
+      <input
+        name="name"
+        required
+        className="w-full border rounded-xl p-3 outline-none focus:ring"
+        placeholder="Enter your name"
+      />
+    </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-1">Your Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="w-full border rounded-xl p-3 outline-none focus:ring"
-                  placeholder="Enter your email"
-                />
-              </div>
+    <div>
+      <label className="block text-sm font-medium mb-1">Your Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        className="w-full border rounded-xl p-3 outline-none focus:ring"
+        placeholder="Enter your email"
+      />
+    </div>
 
-              <div>
-                <label className="block text-sm font-medium mb-1">Message</label>
-                <textarea
-                  name="message"
-                  required
-                  rows="4"
-                  className="w-full border rounded-xl p-3 outline-none focus:ring"
-                  placeholder="Write your message..."
-                />
-              </div>
+    <div>
+      <label className="block text-sm font-medium mb-1">Message</label>
+      <textarea
+        name="message"
+        required
+        rows="4"
+        className="w-full border rounded-xl p-3 outline-none focus:ring"
+        placeholder="Write your message..."
+      />
+    </div>
 
-              <button
-                type="submit"
-                className="px-6 py-3 rounded-2xl shadow font-medium bg-blue-600 text-white hover:bg-blue-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
+    <button
+      type="submit"
+      className="px-6 py-3 rounded-2xl shadow font-medium bg-blue-600 text-white hover:bg-blue-700 transition"
+    >
+      Send Message
+    </button>
+  </form>
 
+  <p className="text-center text-gray-500 mt-4 text-sm">
+    Or email me directly at{" "}
+    <a
+      className="text-blue-600 hover:underline"
+      href="mailto:troykinger000@gmail.com"
+    >
+      troykinger000@gmail.com
+    </a>
+  </p>
+</section>
 
-            <p className="text-center text-gray-500 mt-4 text-sm">
-              Or email me directly at {" "}
-              <a className="text-blue-600 hover:underline" href="mailto:troykinger000@gmail.com">
-                troykinger000@gmail.com
-              </a>
-            </p>
-          </section>
         </Reveal>
 
         {/* Footer */}
