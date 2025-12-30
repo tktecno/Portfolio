@@ -252,6 +252,7 @@ export default function Portfolio() {
   <form
     name="contact"
     method="POST"
+    action="/success"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     className="max-w-2xl mx-auto space-y-4 p-6 border rounded-2xl shadow-sm"
@@ -327,3 +328,4 @@ export default function Portfolio() {
     </>
   );
 }
+
