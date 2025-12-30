@@ -46,7 +46,7 @@ export default function Portfolio() {
 
 
 
-  const [skills, setSkills] = useState([
+  const [skills] = useState([
     { skill: "JavaScript", icon: "https://img.icons8.com/color/48/javascript--v1.png" },
     { skill: "C++", icon: "https://img.icons8.com/color/48/c-plus-plus-logo.png" },
     { skill: "React", icon: "https://img.icons8.com/color/48/react-native.png" },
@@ -152,7 +152,7 @@ This portfolio is built using React and Tailwind CSS, reflecting my focus on cle
               </p>
               <div className="text-sm text-gray-500 mb-3">React • CSS</div>
               Source Code - 
-              <a href="https://github.com/tktecno/Food-Blog-Application" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg "> GitHub</a>
+              <a href="https://github.com/tktecno/Food-Blog-Application" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer" > GitHub</a>
             </div>
             <div className="rounded-2xl border p-6 transition-transform duration-200 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-[-8px_-8px_18px_rgba(0,0,0,0.04),8px_8px_18px_rgba(0,0,0,0.12)] hover:shadow-[-10px_-10px_22px_rgba(0,0,0,0.06),10px_10px_22px_rgba(0,0,0,0.16)] hover:-translate-y-1">
               <h4 className="text-xl font-semibold mb-2"> Hide Here </h4>
@@ -161,7 +161,7 @@ This portfolio is built using React and Tailwind CSS, reflecting my focus on cle
               </p>
               <div className="text-sm text-gray-500 mb-3">React • CSS • Ejs • Express • Drizzle • Jwt </div>
               Source Code - 
-              <a href="https://github.com/tktecno/Hide-Here" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg "> GitHub</a>
+              <a href="https://github.com/tktecno/Hide-Here" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer" > GitHub</a>
             </div>
             <div className="rounded-2xl border p-6 transition-transform duration-200 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-[-8px_-8px_18px_rgba(0,0,0,0.04),8px_8px_18px_rgba(0,0,0,0.12)] hover:shadow-[-10px_-10px_22px_rgba(0,0,0,0.06),10px_10px_22px_rgba(0,0,0,0.16)] hover:-translate-y-1">
               <h4 className="text-xl font-semibold mb-2"> Todo App </h4>
@@ -170,7 +170,7 @@ This portfolio is built using React and Tailwind CSS, reflecting my focus on cle
               </p>
               <div className="text-sm text-gray-500 mb-3">React • CSS </div>
               Source Code - 
-              <a href="https://github.com/tktecno/Todo-App" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg "> GitHub</a>
+              <a href="https://github.com/tktecno/Todo-App" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer" > GitHub</a>
             </div>
 
             <div className="rounded-2xl border p-6 transition-transform duration-200 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-[-8px_-8px_18px_rgba(0,0,0,0.04),8px_8px_18px_rgba(0,0,0,0.12)] hover:shadow-[-10px_-10px_22px_rgba(0,0,0,0.06),10px_10px_22px_rgba(0,0,0,0.16)] hover:-translate-y-1">
@@ -179,6 +179,8 @@ This portfolio is built using React and Tailwind CSS, reflecting my focus on cle
                 A responsive portfolio built using React & Tailwind to showcase my skills and growth as a developer.
               </p>
               <div className="text-sm text-gray-500 mb-3">React • Tailwind CSS</div>
+              Source Code - 
+              <a href="https://github.com/tktecno/Portfolio" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer" > GitHub</a>
             </div>
 
             <div className="rounded-2xl border p-6 transition-transform duration-200 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-[-8px_-8px_18px_rgba(0,0,0,0.04),8px_8px_18px_rgba(0,0,0,0.12)] hover:shadow-[-10px_-10px_22px_rgba(0,0,0,0.06),10px_10px_22px_rgba(0,0,0,0.16)] hover:-translate-y-1">
@@ -188,8 +190,19 @@ This portfolio is built using React and Tailwind CSS, reflecting my focus on cle
               </p>
               <div className="text-sm text-gray-500 mb-3">HTML • CSS • JavaScript</div>
               <div className="flex gap-5"> 
-              <a href="https://github.com/tktecno/World-Eduhub" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " >Github</a>
+              <a href="https://github.com/tktecno/World-Eduhub" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer"  >Github</a>
               <Link to="/world-eduhub" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg ">Preview</Link>
+              </div>
+            </div>
+            <div className="rounded-2xl border p-6 transition-transform duration-200 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-[-8px_-8px_18px_rgba(0,0,0,0.04),8px_8px_18px_rgba(0,0,0,0.12)] hover:shadow-[-10px_-10px_22px_rgba(0,0,0,0.06),10px_10px_22px_rgba(0,0,0,0.16)] hover:-translate-y-1">
+              <h4 className="text-xl font-semibold mb-2">NightWo -Ecommerce Website</h4>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Nightwo is an ongoing full-stack project where I’m building a secure and scalable web application using Node.js, React, Tailwind CSS, Drizzle ORM, and JWT authentication. The app is still in development, and I’m continuously expanding its features and improving the UI.
+              </p>
+              <div className="text-sm text-gray-500 mb-3">Node.js • React • Expressjs • Tailwind CSS • Drizzle ORM • JWT authentication </div>
+              <div className="flex gap-5"> 
+              <a href="https://github.com/tktecno/NightWo/tree/main" target="_blank" className=" py-1 px-2 shadow-sm hover:shadow-gray-700 hover:bg-slate-500 shadow-white rounded-lg " rel="noopener noreferrer"  >Github</a>
+              
               </div>
             </div>
 
