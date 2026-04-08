@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+:root {
+    --paper-bg: #f6f0e7;
+    --ink-bg: #05131a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+    animation: uper 2s linear forwards;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+    scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    margin: 0;
+    font-family: "Aptos", "Trebuchet MS", "Segoe UI", sans-serif;
+    transition: background-color 220ms ease, color 220ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::selection {
+    background: rgba(217, 243, 111, 0.35);
+    color: inherit;
+}
+
+.display-font {
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    letter-spacing: -0.04em;
+}
+
+.section-kicker {
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.panel-noise {
+    position: relative;
+    isolation: isolate;
+}
+
+.panel-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.16;
+    background-image: radial-gradient(currentColor 0.75px, transparent 0.75px);
+    background-size: 18px 18px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.panel-noise > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes uper {
+    0% {
+        height: 100%;
+    }
+
+    90% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0;
+    }
 }
