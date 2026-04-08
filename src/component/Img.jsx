@@ -1,27 +1,55 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
+
+const pictures = ["./character.webp", "./tps2.webp"];
 
 export const Img = () => {
-    const [url , setUrl] = useState("./character.webp")
-    const [idx, setIdx] = useState(1);
-    const pic = [
-        "./character.webp",
-        "./tps2.webp"
-    ]
-    const isMirrored = url === "./tps2.webp";
-    const handleClick = ()=>{
-        setIdx(prev=> ++prev%2);
-        setUrl(pic[idx]);
-        
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [displayedUrl, setDisplayedUrl] = useState(pictures[0]);
+  const [isSwitching, setIsSwitching] = useState(false);
+  const isMirrored = displayedUrl === "./tps2.webp";
+
+  useEffect(() => {
+    pictures.forEach((source) => {
+      const image = new Image();
+      image.src = source;
+    });
+  }, []);
+
+  const handleClick = () => {
+    if (isSwitching) {
+      return;
     }
 
-    return (
-        <>
-            <img src={url}
-                alt="Tapash Roy portfolio illustration"
-                className={`w-full h-full object-cover ${isMirrored ? "scale-x-[-1]" : ""}`}
-                decoding="async"
-                fetchPriority="high"
-                onClick={handleClick} />
-        </>
-    )
-}
+    const nextIndex = (activeIndex + 1) % pictures.length;
+    const nextUrl = pictures[nextIndex];
+
+    if (nextUrl === displayedUrl) {
+      setActiveIndex(nextIndex);
+      return;
+    }
+
+    setIsSwitching(true);
+
+    const image = new Image();
+    image.onload = () => {
+      setDisplayedUrl(nextUrl);
+      setActiveIndex(nextIndex);
+      setIsSwitching(false);
+    };
+    image.onerror = () => {
+      setIsSwitching(false);
+    };
+    image.src = nextUrl;
+  };
+
+  return (
+    <img
+      src={displayedUrl}
+      alt="Tapash Roy portfolio illustration"
+      className={`h-full w-full object-cover ${isMirrored ? "scale-x-[-1]" : ""}`}
+      decoding="async"
+      fetchPriority="high"
+      onClick={handleClick}
+    />
+  );
+};
