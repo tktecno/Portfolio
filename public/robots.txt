@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /success
+Sitemap: https://portfolio-tapashroy.netlify.app/sitemap.xml
